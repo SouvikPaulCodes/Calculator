@@ -1,0 +1,79 @@
+body, .display, .calculator, .input, .left, .clear, .numbers, .row, .right {
+    display: flex;
+}
+
+.calculator, .left, .numbers, .right {
+    flex-direction: column;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(212, 212, 252);
+}
+
+button, .left, .numbers, .row, .input {
+    flex: 1 1 auto;
+    gap: 3px;
+}
+
+.calculator {
+    width: 400px;
+    height: 500px;
+    gap: 5px;
+    border: 7px solid black;
+    background-color: black;
+}
+
+.display, .right {
+    flex: 0.5 1 auto;
+}
+
+.clear {
+    flex: 0.3 1 auto;
+}
+
+.right, .clear {
+    gap: 3px;
+}
+
+button {
+    font-size: medium;
+    border-radius: 10px;
+}
+
+.display {
+    border: 5px solid black;
+    background-color: rgb(175, 174, 174);
+    justify-content: end;
+    max-width: 390px;
+    max-height: 94.672px;
+    align-items: center;
+    font-size: 50px;
+}
+
+.clear button {
+    background-color: rgb(102, 102, 250);
+    font-size: 20px;
+}
+
+.row button {
+    background-color: rgb(253, 165, 1);
+    font-size: 30px;
+}
+
+.right button {
+    font-size: 30px;
+    background-color: rgb(86, 247, 86);
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+
